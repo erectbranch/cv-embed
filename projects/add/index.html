@@ -17,7 +17,7 @@
 
 body {
   font-family: "Lexend", sans-serif;
-  background-color: #362a2b;
+  background-color: #ffffff;
   color: #e5ebf3;
 }
 
@@ -36,6 +36,9 @@ body {
   height: 100%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 .slide.current {
@@ -44,23 +47,19 @@ body {
 
 
 .slide:first-child {
-  background: url("1.png") no-repeat
-    center top/cover;
+  background: url("1.png");
 }
 
 .slide:nth-child(2) {
-  background: url("2.png") no-repeat
-    center top/cover;
+  background: url("2.png");
 }
 
 .slide:nth-child(3) {
-  background: url("3.png") no-repeat
-    center top/cover;
+  background: url("3.png");
 }
 
 .slide:nth-child(4) {
-  background: url("4.png") no-repeat
-    center top/cover;
+  background: url("4.png");
 }
 
 
@@ -77,9 +76,9 @@ body {
 }
 
 .buttons button {
-  border: 2px solid #e5ebf3;
+  border: 2px solid #ff9900;
   background-color: transparent;
-  color: #e5ebf3;
+  color: #ff9900;
   cursor: pointer;
   padding: 13px 15px;
   border-radius: 50%;
@@ -87,7 +86,7 @@ body {
 }
 
 .buttons button:hover {
-  background-color: #e5ebf3;
+  background-color: #ffeed5;
   color: #362a2b;
 }
 
@@ -130,7 +129,7 @@ body {
     const nextButton = document.getElementById("next");
     const prevButton = document.getElementById("prev");
     const auto = true;
-    const intervalTime = 5000;
+    const intervalTime = 20000;
     let slideInterval;
 
     const nextSlide = () => {
